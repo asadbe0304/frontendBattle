@@ -89,10 +89,6 @@
               <button class="gButton">Shop now</button>
             </div>
           </div>
-      <section class="hero-section">
-        <div class="container-big">
-          <div class="hero"></div>
-        </div>
       </section>
       <section class="category">
         <div class="container">
@@ -219,25 +215,48 @@
               <h3>Testimonials</h3>
               <p>Over 15,000 happy customers.</p>
             </div>
-            <div class="user__comments-wrapper">
-              <div class="user__comment">
-                <div class="item__img">
-                  <img src="./images/Image container.jpg" alt="user-item-img" />
+            <div class="user__comments-wrapper user-swiper  myUserSwiper">
+              <div class="user-swiper-wrapper">
+          
+                  <div class="user__comment user-swiper-slide">
+                    <div class="item__img">
+                      <img src="./images/Image container.jpg" alt="user-item-img" />
+                    </div>
+                    <div class="user">
+                      <h4>
+                        “My experience with Mark is a complete sucess, from customer
+                        service, wide range of products, clean store, purchasing
+                        experience, the newsletter.Thank you.”
+                      </h4>
+                      <div class="about__user">
+                        <p>Leona Paul</p>
+                        <span>CEO of Floatcom</span>
+                      </div>
+                    </div>
+                  </div>  
+                <div class="arrow">                  
+                  <div class="prevtUser"> <img  class="prevsUserIcon" src="./images/arrow-bg-grey.svg" alt="arrow-icon"></div>
+                  <div class="nextUser"> <img  class="nextUserIcon" src="./images/arrow-bg-grey.svg" alt="arrow-icon"></div>
                 </div>
-                <div class="user">
-                  <h4>
-                    “My experience with Mark is a complete sucess, from customer
-                    service, wide range of products, clean store, purchasing
-                    experience, the newsletter.Thank you.”
-                  </h4>
-                  <div class="about__user">
-                    <p>Leona Paul</p>
-                    <span>CEO of Floatcom</span>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="site-letter">
+        <div class="container-big">
+          <div class="letters">
+            <div class="letter-left">
+              <img src="./images/letters-img.png" alt="letter-bg-img">
+            </div>
+            <div class="letter-right">
+              <h4 class="right-title">Join Our <span>NewsLetter</span></h4>
+              <p class="right-text">Receive exclusive deals, discounts and many offers.</p>
+              <input type="text" class="letter-input" placeholder="enter-your-email">
+              <button class="letter-btn">Subscribe</button>
+            </div>
+           </div>
         </div>
       </section>
     </main>
@@ -251,7 +270,6 @@
     <!-- Site Footer End  -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
