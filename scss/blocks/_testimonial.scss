@@ -1,0 +1,77 @@
+.testimonial__heading {
+    margin-top: 100px;
+    text-align: center;
+
+    h3 {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 85px;
+        color: #07484A;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        color: #07484A;
+    }
+}
+
+.user__comments-wrapper {
+    margin-top: 117px;
+    display: flex;
+    // width: 5000px;
+
+    .user__comment {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .item__img::before {
+        content: url(../../images/Quote.svg);
+        position: relative;
+        top: 50px;
+        left: -70px;
+    }
+
+    .user {
+        width: 70%;
+
+        h4 {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 49px;
+            color: black;
+            margin-bottom: 60px;
+        }
+
+        .about__user {
+            p {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                color: #07484A;
+            }
+
+            span {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 100;
+                font-size: 24px;
+                line-height: 28px;
+                color: #07484A;
+                opacity: .9;
+            }
+        }
+    }
+}
