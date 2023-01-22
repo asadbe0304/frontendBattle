@@ -1,78 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Inwood</title>
-  </head>
-  <body>
-    <!-- Site Header Start  -->
-    <header class="site-header">
-      <div class="container">
-        <nav class="nav">
-          <a href="./index.html" class="nav__link">
-            <img
-              src="./images/site-logo.svg"
-              alt="site logo"
-              class="nav__link-img"
-            />
-          </a>
-          <ul class="nav__menu-list">
-            <li class="nav__menu-item">
-              <a href="" class="nav__menu-item-link">Home</a>
-            </li>
-            <li class="nav__menu-item">
-              <a href="" class="nav__menu-item-link">Products</a>
-            </li>
-            <li class="nav__menu-item">
-              <a href="" class="nav__menu-item-link">Categories</a>
-            </li>
-            <li class="nav__menu-item">
-              <a href="" class="nav__menu-item-link">About</a>
-            </li>
-            <li class="nav__menu-item">
-              <a href="" class="nav__menu-item-link">Contact us</a>
-            </li>
-          </ul>
-          <ul class="nav__icon-list">
-            <li class="nav__icon-item">
-              <a href="" class="nav__icon-item-link">
-                <img
-                  src="./images/search-icon-bgWhite.svg"
-                  alt="search icon"
-                  class="nav__icon-item-link-img"
-                />
-              </a>
-            </li>
-            <li class="nav__icon-item">
-              <a href="" class="nav__icon-item-link">
-                <img
-                  src="./images/shopping-card-icon-header.svg"
-                  alt="shopping card icon"
-                  class="nav__icon-item-link-img"
-                />
-              </a>
-            </li>
-            <li class="nav__icon-item">
-              <a href="" class="nav__icon-item-link">
-                <img
-                  src="./images/avatar-icon.svg"
-                  alt="avatar icon"
-                  class="nav__icon-item-link-img"
-                />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- Site Header End  -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Inwood</title>
+</head>
+
+<body>
+  <!-- Site Header Start  -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="./index.html" class="nav__link">
+          <img src="./images/site-logo.svg" alt="site logo" class="nav__link-img" />
+        </a>
+        <ul class="nav__menu-list">
+          <li class="nav__menu-item">
+            <a href="" class="nav__menu-item-link">Home</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="" class="nav__menu-item-link">Products</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="" class="nav__menu-item-link">Categories</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="" class="nav__menu-item-link">About</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="" class="nav__menu-item-link">Contact us</a>
+          </li>
+        </ul>
+        <ul class="nav__icon-list">
+          <li class="nav__icon-item">
+            <a href="" class="nav__icon-item-link">
+              <img src="./images/search-icon-bgWhite.svg" alt="search icon" class="nav__icon-item-link-img" />
+            </a>
+          </li>
+          <li class="nav__icon-item">
+            <a href="" class="nav__icon-item-link">
+              <img src="./images/shopping-card-icon-header.svg" alt="shopping card icon"
+                class="nav__icon-item-link-img" />
+            </a>
+          </li>
+          <li class="nav__icon-item">
+            <a href="" class="nav__icon-item-link">
+              <img src="./images/avatar-icon.svg" alt="avatar icon" class="nav__icon-item-link-img" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Site Header End  -->
 
     <!-- Site Main Start  -->
     <main class="site-main">
@@ -89,9 +73,11 @@
               <button class="gButton">Shop now</button>
             </div>
           </div>
+      <section class="hero-section">
+        <div class="container-big">
+          <div class="hero"></div>
         </div>
       </section>
-
       <section class="category">
         <div class="container">
           <h2 class="category__title">Explore by Category</h2>
@@ -361,10 +347,13 @@
                   />
                 </div>
               </div>
-              <div class="swiper-scrollbar"></div>
-              <!-- <div class="swiper-pagination"></div> -->
             </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="popular__bottom">
             <div class="swiper-button-next">
+              <img src="./images/arrow-bg-grey.svg" class="arrow-product" width="15" height="10"
+                alt="arrow icon slide next">
               <img
                 src="./images/arrow-bg-grey.svg"
                 class="arrow-product"
@@ -381,8 +370,43 @@
                 alt=""
               />
             </div>
-            <div class="popular__bottom">
+            <button class="popular__btn">
+              Explore all Items
+              <img src="./images/arrow-right-icon.svg" class="btn_arrow" alt="arrow icon color white" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="site-packages">
+      <div class="container">
+        <div class="packages">
+          <div class="package__top">
+            <h2 class="caption">
+              Special Package
+            </h2>
+          </div>
+          <div class="packages__inner">
+          <div class="package__left">
+            <img src="./images/package-section-cardImg1.png" width="822" height="556" alt="images">
+            <div class="package__left--bottom">
+              <div class="package__wood">
+                <p class="package__bottom--text">
+                  Larkin Wood Full Set
+                </p>
+                <div class="package__star">
+                  <img src="./images/star-icon.svg" width="40" height="40" alt=" start icon">
+                  <img src="./images/star-icon.svg" width="40" height="40" alt=" start icon">
+                  <img src="./images/star-icon.svg" width="40" height="40" alt=" start icon">
+                  <img src="./images/star-icon.svg" width="40" height="40" alt=" start icon">
+                </div>
+                <p class="price__title">
+                  $729
+                </p>
+              </div>
               <button class="popular__btn">
+                Add to Cart
+                <img src="./images/package-section-shopping-card-icon.svg" width="27" height="26" alt="cart icon">
                 Explore all Items
                 <img
                   src="./images/arrow-right-icon.svg"
@@ -392,11 +416,124 @@
               </button>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="site-packages">
-        <div class="container">
-          <div class="packages"></div>
+              <div class="package__right">
+                <div class="package__right-top">
+                  <h3 class="description__title">
+                    Description
+                  </h3>
+                  <p class="desc__text">
+                    Cast Aluminum Outdoor Chaise Lounge As an elegant and classic touch to your outdoor space, this cast
+                    Aluminum Chaise Lounge combines the appearance, function and quality all together, offering you with
+                    the best experience.
+                  </p>
+                  <button class="btn__more">
+                    See More
+                    <img src="./images/Down-arrow-icon.svg" width="14" height="7" alt="down arrow icon">
+                  </button>
+                </div>
+                <div class="package__bottom">
+                  <div class="package__card">
+                    <img src="./images/package-section-cardImg2.png" width="288" height="183"
+                      alt="living room family set" class="package__living">
+                    <div class="package__card--inner">
+                      <div class="package__title--card">
+                        <h3 class="room--title">
+                          Living Room Family Set
+                        </h3>
+                        <span class="package-price">
+                          $229
+                        </span>
+                      </div>
+                      <div>
+                        <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                        <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                        <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                        <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                        <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="package__bottom--inner">
+                  <div class="package__card">
+                  <img src="./images/package-section-cardImg3.png" width="248" height="149" alt="living room family set"
+                    class="package__living">
+                  <div class="package__card--inner">
+                    <div class="package__title--card">
+                      <h3 class="room--title">
+                        Living Room Family Set
+                      </h3>
+                      <span class="package-price">
+                        $229
+                      </span>
+                    </div>
+                    <div>
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                    </div>
+                    <button class="btn__more"> 
+                      See Details
+                      <img src="./images/Down-arrow-icon.svg" alt="icon">
+                    </button>
+                  </div>
+                </div>
+                <div class="package__card">
+                  <img src="./images/package-section-cardImg3.png" width="248" height="149" alt="living room family set"
+                    class="package__living">
+                  <div class="package__card--inner">
+                    <div class="package__title--card">
+                      <h3 class="room--title">
+                        Living Room Family Set
+                      </h3>
+                      <span class="package-price">
+                        $229
+                      </span>
+                    </div>
+                    <div>
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                    </div>
+                    <button class="btn__more"> 
+                      See Details
+                      <img src="./images/Down-arrow-icon.svg" alt="icon">
+                    </button>
+                  </div>
+                </div>
+                <div class="package__card">
+                  <img src="./images/package-section-cardImg3.png" width="248" height="149" alt="living room family set"
+                    class="package__living">
+                  <div class="package__card--inner">
+                    <div class="package__title--card">
+                      <h3 class="room--title">
+                        Living Room Family Set
+                      </h3>
+                      <span class="package-price">
+                        $229
+                      </span>
+                    </div>
+                    <div>
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                      <img src="./images/star-icon.svg" width="18" height="18" alt="star">
+                    </div>
+                    <button class="btn__more"> 
+                      See Details
+                      <img src="./images/Down-arrow-icon.svg" alt="icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
       </section>
       <section class="site-benefits">

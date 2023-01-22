@@ -1,0 +1,122 @@
+.package__top {
+  padding: 200px 0 0 0;
+  h2 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 96px;
+    color: #07484a;
+  }
+}
+.packages__inner {
+  width: 100%;
+  @include flex(flex, row, space-between, flex-start);
+  .package__left--bottom {
+    margin-top: 32px;
+    @include flex(flex, row, space-between, flex-start);
+    .package__wood {
+      @include flex(flex, column, space-between, flex-start);
+    }
+  }
+}
+.package__bottom--text {
+  margin-bottom: 21px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  color: #07484a;
+}
+.price__title {
+  margin-top: 21px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 115%;
+  letter-spacing: -0.02em;
+  color: #07484a;
+}
+.popular__btn {
+  @include gButton;
+}
+
+.package__right {
+  .package__right-top {
+    margin-bottom: 47px;
+    @include flex(flex, column, space-between, flex-start);
+    h3 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 48px;
+      color: #07484a;
+    }
+    p {
+      margin: 20px 0 20px 0;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 115%;
+      letter-spacing: -0.02em;
+      color: #07484a;
+    }
+    button {
+      background: transparent;
+      border: none;
+    }
+  }
+  @include flex(flex, column, space-between, flex-start);
+  .package__bottom {
+    @include flex(flex, column, space-between, flex-start);
+    gap: 20px;
+  }
+}
+.package__card {
+  @include flex(flex, row, space-between, flex-start);
+}
+.package__bottom--inner {
+  margin-top: 20px;
+  width: 100%;
+  @include flex(flex, column, space-between, flex-start);
+  gap: 20px;
+  overflow-y: scroll;
+  height: 300px;
+  .package__card {
+    @include flex(flex, row, space-between, flex-start);
+  }
+}
+.package__title--card {
+ .room--title{
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    color: #07484a;
+  }
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background: #07484a;
+}
+::-webkit-scrollbar-thumb {
+  background: #646969;
+  width: 8px;
+}
+.btn__more {
+  background: transparent;
+  border: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 115%;
+  letter-spacing: -0.02em;
+  color: #07484a;
+}
