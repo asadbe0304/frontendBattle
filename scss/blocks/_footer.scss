@@ -1,0 +1,107 @@
+.footer {
+  padding: 100px 0 32px 0;
+
+  &__wrapper {
+    margin-bottom: 69px;
+    display: flex;
+    justify-content: space-between;
+    &-box {
+      max-width: 405px;
+      width: 100%;
+
+      &-link {
+        &-img {
+          width: 137px;
+          height: 36px;
+          margin-bottom: 21px;
+          // color: red;
+        }
+      }
+
+      &-icon-list {
+        max-width: 286px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        margin-bottom: 21px;
+      }
+
+      &-item {
+        &-link {
+          color: #07484a;
+
+          &:hover {
+            color: rgba(7, 72, 74, 0.8);
+          }
+          &:active {
+            color: rgba(7, 72, 74, 0.6);
+          }
+        }
+      }
+
+      &-list {
+        width: 190px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      &-item {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #07484a;
+
+        &:first-child {
+          font-weight: 700;
+        }
+      }
+    }
+
+    &-list {
+      max-width: 1115px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-subItem {
+      &:first-child {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #07484a;
+      }
+
+      &-link {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #07484a;
+        text-transform: capitalize;
+      }
+
+      &:not(:nth-child(1)),
+      &:not(:nth-child(2)) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__copyright-text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    color: #07484a;
+  }
+}
