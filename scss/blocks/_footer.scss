@@ -75,6 +75,7 @@
         font-size: 18px;
         line-height: 25px;
         color: #07484a;
+        border: 1px solid red;
       }
 
       &-link {
@@ -87,8 +88,8 @@
         text-transform: capitalize;
       }
 
-      &:not(:nth-child(1)),
-      &:not(:nth-child(2)) {
+      &:not(:nth-child()),
+      &:not(:first-child) {
         margin-bottom: 10px;
       }
     }
