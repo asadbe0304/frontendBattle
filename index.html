@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Battle</title>
   </head>
@@ -24,7 +28,7 @@
     <main class="site-main">
       <section class="hero-section">
         <div class="container-big">
-          <div class="hero">d</div>
+          <div class="hero"></div>
         </div>
       </section>
       <section class="site-category">
@@ -34,7 +38,74 @@
       </section>
       <section class="site-popular">
         <div class="container">
-          <div class="popular"></div>
+          <div class="popular">
+            <div class="popular__top">
+              <h2 class="popular__top--title">Popular Products</h2>
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./images/popular-section-cardImg1.png" class="product__img" width="204" height="270"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/popular-section-cardImg2.png" class="product__img" width="248" height="294"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/popular-section-cardImg3.png" class="product__img" width="279" height="279"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/package-section-cardImg4.png" class="product__img" width="248" height="294"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-005.jpg" class="product__img" width="248" height="294"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-006.jpg" class="product__img" width="248" height="294"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-007.jpg" class="product__img" width="248" height="294"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-008.jpg" class="product__img" width="248" height="294"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-009.jpg" class="product__img" width="248" height="294"
+                  />
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <div class="swiper-button-next">
+              <img src="./images/arrow-bg-grey.svg" class="arrow-product" width="15" height="10" alt="arrow icon slide next" >
+            </div>
+            <div class="swiper-button-prev">
+              <img src="./images/arrow-bg-grey.svg" width="15" height="10" alt="">
+            </div>
+            <div class="popular__bottom">
+              <button class="popular__btn">
+                Explore all Items
+                <img src="./images/arrow-right-icon.svg" class="btn_arrow" alt="arrow icon color white" />
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="site-packages">
@@ -115,5 +186,37 @@
       </div>
     </footer>
     <!-- Site Footer End  -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        breakpoints: {
+          769: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
