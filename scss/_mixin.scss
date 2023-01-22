@@ -1,12 +1,26 @@
-@mixin flex($flex,$direction,$justify, $align) {
-    display: $flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+@mixin flex($flex, $direction, $justify, $align) {
+  display: $flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
-@mixin font($fw,$fz, $lh, $color) {
-    font-weight: $fw;
-    font-size: $fz;
-    line-height: $lh;
-    color: $color;
+@mixin font($fw, $fz, $lh, $color) {
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  color: $color;
+}
+
+@mixin gButton {
+  text-transform: capitalize;
+    border: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #fdfbf8;
+  padding: 23.5px 54.5px;
+  background-color: #70908b;
+  border-radius: 10px;
 }

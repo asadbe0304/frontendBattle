@@ -1,0 +1,78 @@
+.site-header {
+  position: absolute;
+  width: 100%;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 0;
+
+  &__link {
+    &-img {
+      width: 144px;
+      height: 36px;
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+    max-width: 606px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__menu-item {
+    width: 115px;
+    padding: 0 0 5px 0px;
+    display: flex;
+    justify-content: center;
+
+    &-link {
+      text-transform: capitalize;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 132.9%;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      transition: all 0.05s ease-in;
+      border-bottom: 3px solid transparent;
+
+      &:hover {
+        font-weight: 700;
+        border-bottom: 3px solid #fff;
+      }
+
+      &:active {
+        font-weight: 700;
+        border-bottom: 3px solid #fff;
+      }
+    }
+  }
+
+  &__icon-list {
+    display: flex;
+    max-width: 196px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__icon-item {
+    &-link {
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.6;
+      }
+
+      &-img {
+        width: 27px;
+        height: 27px;
+      }
+    }
+  }
+}
