@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Battle</title>
   </head>
@@ -34,7 +38,70 @@
       </section>
       <section class="site-popular">
         <div class="container">
-          <div class="popular"></div>
+          <div class="popular">
+            <div class="popular__top">
+              <h2 class="popular__top--title">Popular Products</h2>
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-001.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-002.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-003.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-004.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-005.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-006.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-007.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-008.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.magloft.com/github/swiper/images/page-009.jpg"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-scrollbar"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="popular__bottom">
+              <button class="popular__btn">
+                Explore all Items
+                <img src="./" class="btn_arrow" alt="arrow icon color white" />
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="site-packages">
@@ -61,5 +128,37 @@
       </div>
     </footer>
     <!-- Site Footer End  -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        breakpoints: {
+          769: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
