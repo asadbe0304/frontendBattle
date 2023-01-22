@@ -11,4 +11,138 @@
     margin-bottom: 99px;
     text-align: center;
   }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    max-width: 349px;
+    width: 100%;
+
+    &-input {
+      position: relative;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      padding: 26px 32px;
+      background-color: #f0f0f0;
+      margin-bottom: 80px;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        border: 1px solid red;
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url("./../../images/search-icon-bgGrey.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        z-index: 9;
+      }
+
+      &::placeholder {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+
+        color: #6e757e;
+      }
+    }
+    &-list {
+      padding: 0 25px;
+      height: 694px;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      gap: 83px;
+      margin-bottom: 80px;
+
+      &::-webkit-scrollbar {
+        width: 1px;
+        background-color: #07484a;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #70908b;
+        outline: 5px solid #70908b;
+      }
+    }
+
+    &-item {
+      &-link {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #07484a;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &__card-list {
+    max-width: 1211px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  &__card-item {
+    position: relative;
+    display: flex;
+
+    &:hover {
+      opacity: 0.7;
+      .category__card-item-box {
+        display: block;
+      }
+    }
+
+    &-img {
+      width: 589.5px;
+      border-radius: 10px;
+    }
+
+    &-box {
+      position: absolute;
+      left: calc(50% - 135px);
+      top: calc(50% - 85px);
+      width: 245px;
+      display: none;
+
+      &-title {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 85px;
+        color: #fdfbf8;
+        margin-bottom: 36px;
+      }
+    }
+  }
+}
+
+.category-btn {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #07484a;
+  padding: 14px 43px;
+  background-color: #e0eff6;
+  border-radius: 6px;
+  border: none;
+  display: block;
+  margin: 0 auto;
 }
