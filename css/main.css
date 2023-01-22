@@ -371,6 +371,16 @@ img {
      object-fit: cover;
 }
 
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -386,4 +396,118 @@ img {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 1660px;
+}
+
+.site-benefits {
+  background-color: #E0EFF6;
+}
+
+.benefits {
+  padding: 100px 0;
+}
+.benefits__title {
+  text-align: center;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  color: #07484A;
+  margin-bottom: 112px;
+}
+.benefits__type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.benefits__type-box {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.type__box-img {
+  margin-bottom: 32px;
+}
+
+.type__box-text h2 {
+  text-align: center;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #07484A;
+  margin-bottom: 32px;
+}
+.type__box-text p {
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #07484A;
+}
+
+@media screen and (max-width: 1024px) {
+  .benefits__type-box {
+    width: 30%;
+    height: 30%;
+  }
+  .benefits__title {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .type__box-img img {
+    width: 90px;
+  }
+  .type__box-text h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .type__box-text p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .benefits__type-box {
+    width: 40%;
+    height: 30%;
+  }
+  .benefits__title {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .type__box-img img {
+    width: 90px;
+  }
+  .type__box-text h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .type__box-text p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .benefits__type {
+    flex-direction: column;
+  }
+  .benefits__type-box {
+    width: 70%;
+    height: 30%;
+  }
+  .benefits__title {
+    font-size: 33px;
+    line-height: 42px;
+  }
 }/*# sourceMappingURL=main.css.map */
