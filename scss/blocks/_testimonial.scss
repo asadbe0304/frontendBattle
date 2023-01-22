@@ -23,9 +23,9 @@
 }
 
 .user__comments-wrapper {
+    position: relative;
     margin-top: 117px;
-    display: flex;
-    // width: 5000px;
+    margin-bottom: 100px;
 
     .user__comment {
         display: flex;
@@ -37,7 +37,7 @@
         content: url(../../images/Quote.svg);
         position: relative;
         top: 50px;
-        left: -70px;
+        left: -15px;
     }
 
     .user {
@@ -74,4 +74,32 @@
             }
         }
     }
+}
+
+.arrow {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .prevtUser {
+        background-color: #E0EFF6;
+        padding: 14px;
+        border-radius: 50%;
+    }
+
+    .nextUser {
+        background-color: #F9D9DA;
+        padding: 15px;
+        border-radius: 50%;
+        transform: rotateY(180deg);
+    }
+
+    .nextUserIcon,
+    .prevsUserIcon {
+        width: 20px;
+    }
+
 }
