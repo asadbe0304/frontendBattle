@@ -545,7 +545,6 @@ a {
 
 .user__comments-wrapper {
   margin-top: 117px;
-  display: flex;
 }
 .user__comments-wrapper .user__comment {
   display: flex;
