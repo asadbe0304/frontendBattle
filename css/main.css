@@ -1128,4 +1128,122 @@ a {
   color: #07484A;
   opacity: .9;
 }
+
+.footer {
+  padding: 100px 0 32px 0;
+}
+
+.footer__wrapper {
+  margin-bottom: 69px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__wrapper-box {
+  max-width: 405px;
+  width: 100%;
+}
+
+.footer__wrapper-box-link-img {
+  width: 137px;
+  height: 36px;
+  margin-bottom: 21px;
+}
+
+.footer__wrapper-box-icon-list {
+  max-width: 286px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 21px;
+}
+
+.footer__wrapper-box-item-link {
+  color: #07484a;
+}
+
+.footer__wrapper-box-item-link:hover {
+  color: rgba(7, 72, 74, 0.8);
+}
+
+.footer__wrapper-box-item-link:active {
+  color: rgba(7, 72, 74, 0.6);
+}
+
+.footer__wrapper-box-list {
+  width: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.footer__wrapper-box-item {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #07484a;
+}
+
+.footer__wrapper-box-item:first-child {
+  font-weight: 700;
+}
+
+.footer__wrapper-list {
+  max-width: 1115px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__wrapper-subItem:first-child {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #07484a;
+}
+
+.footer__wrapper-subItem-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #07484a;
+  text-transform: capitalize;
+}
+
+.footer__wrapper-subItem:not(:nth-child(1)), .footer__wrapper-subItem:not(:nth-child(2)) {
+  margin-bottom: 10px;
+}
+
+.footer__copyright-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  color: #07484a;
+}
 /*# sourceMappingURL=main.css.map */
